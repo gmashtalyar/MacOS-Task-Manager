@@ -11,6 +11,12 @@
 		DCC28B0F2B5C4157001BC8C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC28B0E2B5C4157001BC8C1 /* ContentView.swift */; };
 		DCC28B112B5C4158001BC8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC28B102B5C4158001BC8C1 /* Assets.xcassets */; };
 		DCC28B142B5C4158001BC8C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC28B132B5C4158001BC8C1 /* Preview Assets.xcassets */; };
+		DCC28B1D2B5C41AF001BC8C1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC28B1C2B5C41AF001BC8C1 /* Task.swift */; };
+		DCC28B1F2B5C441D001BC8C1 /* TaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC28B1E2B5C441D001BC8C1 /* TaskGroup.swift */; };
+		DCC28B212B5C453B001BC8C1 /* TaskSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC28B202B5C453B001BC8C1 /* TaskSection.swift */; };
+		DCC28B232B5C46CA001BC8C1 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC28B222B5C46CA001BC8C1 /* SidebarView.swift */; };
+		DCC28B252B5C46DE001BC8C1 /* StaticTaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC28B242B5C46DE001BC8C1 /* StaticTaskListView.swift */; };
+		DCC28B272B5C5378001BC8C1 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC28B262B5C5378001BC8C1 /* TaskListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		DCC28B102B5C4158001BC8C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCC28B132B5C4158001BC8C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCC28B152B5C4158001BC8C1 /* MacOSTaskManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOSTaskManager.entitlements; sourceTree = "<group>"; };
+		DCC28B1C2B5C41AF001BC8C1 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DCC28B1E2B5C441D001BC8C1 /* TaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroup.swift; sourceTree = "<group>"; };
+		DCC28B202B5C453B001BC8C1 /* TaskSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSection.swift; sourceTree = "<group>"; };
+		DCC28B222B5C46CA001BC8C1 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		DCC28B242B5C46DE001BC8C1 /* StaticTaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTaskListView.swift; sourceTree = "<group>"; };
+		DCC28B262B5C5378001BC8C1 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +64,15 @@
 		DCC28B0B2B5C4157001BC8C1 /* MacOSTaskManager */ = {
 			isa = PBXGroup;
 			children = (
+				DCC28B1B2B5C419A001BC8C1 /* Model */,
 				DCC28B0C2B5C4157001BC8C1 /* MacOSTaskManagerApp.swift */,
 				DCC28B0E2B5C4157001BC8C1 /* ContentView.swift */,
 				DCC28B102B5C4158001BC8C1 /* Assets.xcassets */,
 				DCC28B152B5C4158001BC8C1 /* MacOSTaskManager.entitlements */,
 				DCC28B122B5C4158001BC8C1 /* Preview Content */,
+				DCC28B222B5C46CA001BC8C1 /* SidebarView.swift */,
+				DCC28B242B5C46DE001BC8C1 /* StaticTaskListView.swift */,
+				DCC28B262B5C5378001BC8C1 /* TaskListView.swift */,
 			);
 			path = MacOSTaskManager;
 			sourceTree = "<group>";
@@ -67,6 +83,16 @@
 				DCC28B132B5C4158001BC8C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCC28B1B2B5C419A001BC8C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCC28B1C2B5C41AF001BC8C1 /* Task.swift */,
+				DCC28B1E2B5C441D001BC8C1 /* TaskGroup.swift */,
+				DCC28B202B5C453B001BC8C1 /* TaskSection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC28B252B5C46DE001BC8C1 /* StaticTaskListView.swift in Sources */,
 				DCC28B0F2B5C4157001BC8C1 /* ContentView.swift in Sources */,
+				DCC28B1D2B5C41AF001BC8C1 /* Task.swift in Sources */,
+				DCC28B212B5C453B001BC8C1 /* TaskSection.swift in Sources */,
+				DCC28B1F2B5C441D001BC8C1 /* TaskGroup.swift in Sources */,
 				DCC28B0D2B5C4157001BC8C1 /* MacOSTaskManagerApp.swift in Sources */,
+				DCC28B232B5C46CA001BC8C1 /* SidebarView.swift in Sources */,
+				DCC28B272B5C5378001BC8C1 /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
